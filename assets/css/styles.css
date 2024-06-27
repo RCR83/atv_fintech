@@ -1,0 +1,76 @@
+body, html {
+    background-image: url(../images/bc_dollar.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(to bottom, #8BC34A, #4CAF50); */
+}
+
+.navbar {
+    background-color: #66BB6A;
+    color: white;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #E8F5E9;
+}
+
+.custom-card {
+    background: linear-gradient(to bottom, #66BB6A, #43A047);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.google-login {
+    font-size: 10px;
+    background-color: #DB4437;
+}
+
+.login-button {
+    background-color: #388E3C;
+}
+
+.text-primary {
+    font-size: 10px;
+    color: #BBDEFB !important;
+}
+
+a.text-primary:hover {
+    color: #E3F2FD !important;
+}
+
+.links a {
+    color: #BBDEFB;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #E3F2FD;
+}
+

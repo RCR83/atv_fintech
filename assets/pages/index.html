@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login Responsiva</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- chamada dos icones no Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand text-green" href="#"><i class="fas fa-leaf"></i> AIOne-Fin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card p-4 custom-card">
+            <h1 class="text-center welcome-text"><i class="fas fa-smile"></i> BEM VINDO!</h1>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="login"><i class="fas fa-user"></i> LOGIN:</label>
+                    <input type="text" class="form-control" id="login" name="login">
+                </div>
+                <div class="form-group">
+                    <label for="senha"><i class="fas fa-lock"></i> SENHA:</label>
+                    <input type="password" class="form-control" id="senha" name="senha">
+                </div>
+                <button type="button" class="btn btn-danger btn-block google-login"><i class="fab fa-google"></i> ENTRAR COM GMAIL</button>
+                <div class="links mt-3">
+                    <a href="#" class="text-primary d-block"><i class="fas fa-user-plus"></i> CRIAR NOVA CONTA</a>
+                    <a href="#" class="text-primary d-block"><i class="fas fa-unlock-alt"></i> RECUPERAÇÃO DE SENHA</a>
+                </div>
+                <button type="submit" class="btn btn-success btn-block login-button mt-3"><i class="fas fa-sign-in-alt"></i> ENTRAR</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e outros -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
