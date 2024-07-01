@@ -9,6 +9,42 @@
     <!-- chamada dos icones no Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        @keyframes colorChange {
+            0% { color: #28a745; }
+            25% { color: #218838; }
+            50% { color: #1e7e34; }
+            75% { color: #19692c; }
+            100% { color: #155724; }
+        }
+
+        .welcome-text {
+            animation: colorChange 5s infinite;
+        }
+
+        .google-login {
+            transition: background-color 0.5s ease;
+        }
+
+        .google-login:hover {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+
+        .text-green, .text-green a {
+            color: #28a745 !important; 
+        }
+
+        .navbar-nav .nav-link {
+            color: #28a745 !important;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #218838 !important; 
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -17,7 +53,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
                 </li>
@@ -31,7 +67,6 @@
         </div>
     </nav>
 
-
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="card p-4 custom-card">
             <h1 class="text-center welcome-text"><i class="fas fa-smile"></i> BEM VINDO!</h1>
@@ -44,7 +79,9 @@
                     <label for="senha"><i class="fas fa-lock"></i> SENHA:</label>
                     <input type="password" class="form-control" id="senha" name="senha">
                 </div>
-                <button type="button" class="btn btn-danger btn-block google-login"><i class="fab fa-google"></i> ENTRAR COM GMAIL</button>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-success google-login" style="width: auto;"><i class="fab fa-google"></i> ENTRAR COM GMAIL</button>
+                </div>
                 <div class="links mt-3">
                     <a href="#" class="text-primary d-block"><i class="fas fa-user-plus"></i> CRIAR NOVA CONTA</a>
                     <a href="#" class="text-primary d-block"><i class="fas fa-unlock-alt"></i> RECUPERAÇÃO DE SENHA</a>
@@ -58,5 +95,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/meuscript.js"></script>
+    <script>
+        let titles = ["Organizando a sua vida!", "Bem-vindo à AIOne-fin"];
+        let index = 0;
+
+        setInterval(() => {
+            document.title = titles[index];
+            index = (index + 1) % titles.length;
+        }, 2000);
+    </script>
 </body>
 </html>
